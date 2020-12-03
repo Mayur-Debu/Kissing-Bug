@@ -10,11 +10,7 @@ toast=ToastNotifier()
 activation_code=random.randint(1000,15000)
 toast.show_toast('KISSING BUG','Your Activation Code is '+str(activation_code),icon_path='bug.ico')
 
-<<<<<<< HEAD
-user_input=input("==>")
-=======
 user_input=input()
->>>>>>> origin/main
 
 if int(user_input)==int(activation_code):
     os.system('cls')
