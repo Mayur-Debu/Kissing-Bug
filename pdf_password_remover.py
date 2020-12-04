@@ -1,4 +1,4 @@
-import loading
+from loading import animateDecrypting
 import pikepdf
 from termcolor import cprint
 import os
@@ -51,7 +51,17 @@ except FileNotFoundError:
         os.system('cls')
         os.system('python Kissing_Bug.py')
 
-loading.animate()
+except ValueError:
+    cprint('Error 404: FILE NOT FOUND.', 'red', attrs=['bold'])
+    choice = input('Do you want to retry? (y/n): ')
+    if choice == 'y' or choice == 'Y':
+        os.system('cls')
+        os.system('python pdf_password_remover.py')
+    else:
+        os.system('cls')
+        os.system('python Kissing_Bug.py')
+
+animateDecrypting()
 
 try:
     cprint('\nPath to the save the decrypted .pdf file: ', 'cyan', attrs=['bold'])
@@ -61,7 +71,7 @@ try:
     pdfFile.save(decryptedFilePath)  # Saving the decrypted .pdf
 
 except FileExistsError:
-    cprint('File Already Exists.','red',attrs=['bold'])
+    cprint('File Already Exists.', 'red', attrs=['bold'])
     choice = input('Do you want to retry? (y/n): ')
     if choice == 'y' or choice == 'Y':
         os.system('cls')
@@ -71,7 +81,7 @@ except FileExistsError:
         os.system('python Kissing_Bug.py')
 
 except NotADirectoryError:
-    cprint('No Such Directory Exists.','red',attrs=['bold'])
+    cprint('No Such Directory Exists.', 'red', attrs=['bold'])
     choice = input('Do you want to retry? (y/n): ')
     if choice == 'y' or choice == 'Y':
         os.system('cls')
@@ -81,7 +91,7 @@ except NotADirectoryError:
         os.system('python Kissing_Bug.py')
 
 except FileNotFoundError:
-    cprint('File Not Found OR File Name Not Specified','red',attrs=['bold'])
+    cprint('File Not Found OR File Name Not Specified', 'red', attrs=['bold'])
     choice = input('Do you want to retry? (y/n): ')
     if choice == 'y' or choice == 'Y':
         os.system('cls')
@@ -89,4 +99,3 @@ except FileNotFoundError:
     else:
         os.system('cls')
         os.system('python Kissing_Bug.py')
-
