@@ -2,7 +2,6 @@ import os
 import getpass
 from termcolor import colored, cprint
 
-
 os.system('cls')
 cprint(
     "\n===========================================================================================================================================================",
@@ -70,10 +69,10 @@ while True:
             os.system('cls')
             os.system('python pdf_password_remover.py')
         except ImportError:
-            cprint('\nERROR WHILE IMPORTING !!!','red',attrs=['bold'])
+            cprint('\nERROR WHILE IMPORTING !!!', 'red', attrs=['bold'])
             cprint('Contact The Developer: https://github.com/Mayur-Debu/Kissing-Bug \n')
             break
-    elif choice==2:
+    elif choice == 2:
         try:
             os.system('cls')
             os.system('python Detect_Malware.py')
@@ -82,12 +81,5 @@ while True:
             cprint('Contact The Developer: https://github.com/Mayur-Debu/Kissing-Bug \n')
             break
 
-    elif choice==3:
+    elif choice == 3:
         exit()
-
-
-
-
-
-
-
