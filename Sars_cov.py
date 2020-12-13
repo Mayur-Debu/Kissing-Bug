@@ -1,6 +1,7 @@
 from termcolor import cprint
 import os
 
+os.system('cls')
 cprint(
     "\n===========================================================================================================================================================",
     'red')
@@ -52,28 +53,34 @@ while True:
     choice = input()
 
     if choice == "A":
-        cwd=os.getcwd()
-        os.chdir("Viruses")
-        os.system('python A.py')
-        os.chdir(cwd)
-        os.system('initial.py')
+        from Virus import virus_A
+        virus_A()
     elif choice == "B":
-        pass
+        from Virus import virus_B
+        virus_B()
     elif choice == "C":
-        pass
+        from Virus import virus_C
+        virus_C()
     elif choice == "D":
-        pass
+        from Virus import virus_D
+        virus_D()
     elif choice == "E":
-        pass
+        from Virus import virus_E
+        virus_E()
     elif choice == "F":
-        pass
+        from Virus import virus_F
+        virus_F()
     elif choice == "G":
-        pass
+        from Virus import virus_G
+        virus_G()
     elif choice == "H":
-        pass
+        from Virus import virus_H
+        virus_H()
     elif choice == "I":
-        pass
+        from Virus import virus_I
+        virus_I()
     elif choice == "J":
-        pass
+        from Virus import virus_J
+        virus_J()
     else:
         cprint('\nPlease enter only \'CAPITAL\' letter.', 'red', attrs=['bold'])
