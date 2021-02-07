@@ -37,7 +37,7 @@ def virus_A():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Antivirus_Hacker.txt', 'Antivirus_Hacker.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -45,7 +45,7 @@ def virus_A():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -53,7 +53,7 @@ def virus_A():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Antivirus_Hacker.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -74,7 +74,7 @@ def virus_B():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Application_Bomber.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Application_Bomber.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -98,7 +98,7 @@ def virus_B():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Application_Bomber.txt', 'Application_Bomber.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -106,7 +106,7 @@ def virus_B():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -114,7 +114,7 @@ def virus_B():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Application_Bomber.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -135,7 +135,7 @@ def virus_C():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Delete_key_registry_files.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Delete_key_registry_files.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -160,7 +160,7 @@ def virus_C():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Delete_key_registry_files.txt', 'Delete_key_registry_files.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -168,7 +168,7 @@ def virus_C():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -176,7 +176,7 @@ def virus_C():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Delete_key_registry_files.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -197,7 +197,7 @@ def virus_D():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Disable_Internet.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Disable_Internet.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -222,7 +222,7 @@ def virus_D():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Disable_Internet.txt', 'Disable_Internet.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -230,7 +230,7 @@ def virus_D():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -238,7 +238,7 @@ def virus_D():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Disable_Internet.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -259,7 +259,7 @@ def virus_E():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Endless_Enter.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Endless_Enter.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -284,7 +284,7 @@ def virus_E():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Endless_Enter.txt', 'Endless_Enter.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -292,7 +292,7 @@ def virus_E():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -300,7 +300,7 @@ def virus_E():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Endless_Enter.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -321,7 +321,7 @@ def virus_F():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Folder_Flooder.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Folder_Flooder.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -346,7 +346,7 @@ def virus_F():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Folder_Flooder.txt', 'Folder_Flooder.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -354,7 +354,7 @@ def virus_F():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -362,7 +362,7 @@ def virus_F():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Folder_Flooder.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -383,7 +383,7 @@ def virus_G():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Popping_CD_Drive.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Popping_CD_Drive.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -408,7 +408,7 @@ def virus_G():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Popping_CD_Drive.txt', 'Popping_CD_Drive.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -416,7 +416,7 @@ def virus_G():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -424,7 +424,7 @@ def virus_G():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Popping_CD_Drive.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -445,7 +445,7 @@ def virus_H():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Unlimited_BG_Process_Creator.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Unlimited_BG_Process_Creator.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -470,7 +470,7 @@ def virus_H():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Unlimited_BG_Process_Creator.txt', 'Unlimited_BG_Process_Creator.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -478,7 +478,7 @@ def virus_H():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -486,7 +486,7 @@ def virus_H():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Unlimited_BG_Process_Creator.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -507,7 +507,7 @@ def virus_I():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/User_Account_Flooder.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/User_Account_Flooder.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -532,7 +532,7 @@ def virus_I():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('User_Account_Flooder.txt', 'User_Account_Flooder.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -540,7 +540,7 @@ def virus_I():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -548,7 +548,7 @@ def virus_I():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("User_Account_Flooder.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
@@ -571,7 +571,7 @@ def virus_J():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Windows_Hacker.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Windows_Hacker.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
@@ -596,7 +596,7 @@ def virus_J():
             if choice == 1:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.rename('Windows_Hacker.txt', 'Windows_Hacker.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -604,7 +604,7 @@ def virus_J():
             elif choice == 2:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system('BatToExe.exe')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
@@ -612,7 +612,7 @@ def virus_J():
             elif choice == 3:
                 try:
                     currentWorkingDirectory = os.getcwd()
-                    os.chdir('Viruses\\Code_Files')
+                    os.chdir('../Viruses/Code_Files')
                     os.system("Windows_Hacker.txt")
                     os.chdir(currentWorkingDirectory)
                     cprint('File Edited', 'red', attrs=['bold'])
