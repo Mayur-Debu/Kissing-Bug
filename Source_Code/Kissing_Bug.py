@@ -58,11 +58,13 @@ cprint(
     "===========================================================================================================================================================\n",
     'red')
 
+
 def importError():
     cprint('\nERROR WHILE IMPORTING !!!', 'red', attrs=['bold'])
     cprint('Contact The Developer: https://github.com/Mayur-Debu/Kissing-Bug \n')
     exit()
-    
+
+
 try:
     while True:
         cprint('1: PDF Decryter.', 'yellow')
@@ -121,12 +123,18 @@ try:
 
         elif choice == 5:
             try:
-                pass
+                cprint("Make sure you're running this function on LINUX.", 'red', attrs=['bold'])
+                print()
+                current_working_directory = os.getcwd()
+                os.chdir('saycheese')
+                os.system('bash saycheese.sh')
+                os.chdir(current_working_directory)
             except OSError:
                 os.system('clear')
                 os.system('python3')
             except ImportError:
                 importError()
+
 
         elif choice == 6:
             try:
@@ -145,7 +153,7 @@ try:
                 os.system('python3')
             except ImportError:
                 importError()
-        
+
         elif choice == 8:
             exit()
 
