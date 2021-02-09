@@ -30,7 +30,7 @@ cprint(
 try:
     os.system('start info.mp3')
 except FileNotFoundError:
-    mytext = 'Hi I apologize for the inconvenience, I request you to follow the below given steps to activate your windows. Cherrs !!! '
+    mytext = 'Hi, I apologize for the inconvenience, I request you to follow the below given steps to activate your windows. Cherrs !!! '
     language = 'en'
     myobj = gTTS(text=mytext, lang=language, slow=False)
     myobj.save("info.mp3")

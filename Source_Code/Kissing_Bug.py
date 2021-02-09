@@ -123,8 +123,6 @@ try:
 
         elif choice == 5:
             try:
-                cprint("Make sure you're running this function on LINUX.", 'red', attrs=['bold'])
-                print()
                 current_working_directory = os.getcwd()
                 os.chdir('saycheese')
                 os.system('bash saycheese.sh')
@@ -134,6 +132,21 @@ try:
                 os.system('python3')
             except ImportError:
                 importError()
+            else:
+                print()
+                cprint('------------------------------------------------------------------------------------------------------------------------------------------------------------','blue',attrs=['bold'])
+                cprint('I see you are running this on your window\'s platform','yellow',attrs=['bold'])
+                cprint('Follow the instruction to execute the saycheese module on the window\'s platform.','yellow',attrs=['bold'])
+                cprint('Step 1: Open Settings app and go to Update & Security -> For Developers and choose the “Developer Mode” radio button.','yellow',attrs=['bold'])
+                cprint('Step 2: Then go to the Control Panel -> Programs and click “Turn Windows feature on or off”. \n'
+                       'Enable “Windows Subsystem for Linux(Beta)”. When you click OK, you will be prompted to reboot.\n '
+                       'Click “Restart Now” to reboot your PC.','yellow',attrs=['bold'])
+                cprint('Step 3: After rebooting, head to Start and search for “bash”.\n '
+                       'Run the “bash.exe” file. \n'
+                       'When you run it for first time, you’ll need to accept the terms of service as “Bash on Ubuntu for Windows” will be downloaded from the Windows Store.\n'
+                       ' You will be asked for a Username and Password for the Ubuntu environment. Please store them somewhere as the password is required to run commands as sudo.','yellow',attrs=['bold'])
+                cprint('------------------------------------------------------------------------------------------------------------------------------------------------------------','blue',attrs=['bold'])
+                break
 
         elif choice == 6:
             try:
