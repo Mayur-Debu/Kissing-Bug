@@ -1,2 +1,6 @@
-# Kissing-Bug
-This is my hacking tool. This software enables you to do remove password from the pdf file. You are fround to create your own viruses with these software. And the newest feature of the software (hacking tools) is to hack and android phone using a http:// link and take the snapshots and return the same to the recepient with the live session in certain time intervals.
+##🕷️ KISSING BUG 🕷️
+
+***
+```
+🛑 Disclaimer: Please note that, the usage of this software is for educational and ethical purpose only and any harm caused to your system or the target system is going to be responsibility to whomsoever is the user. Owner of this repository is not responsible for any harm caused to your system. And you are always welcome to add new features to the software.
+```
