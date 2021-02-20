@@ -23,7 +23,8 @@ user_input = input()
 
 if int(user_input) == int(activation_code):
     os.system('cls')
-    os.system('python Source_code/Kissing_Bug.py')
+    os.chdir("Source_Code")
+    os.system('python Kissing_Bug.py')
 else:
     cprint('Resend? (y/n): ', 'cyan', attrs=['bold'])
     choice = input()
