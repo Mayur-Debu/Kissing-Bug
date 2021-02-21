@@ -34,6 +34,17 @@ This software altogether has six main feature's to benifit the user, they are:
 ```
 
 ***
+
+```
+Installation Process:
+
+#1 git clone https://github.com/Mayur-Debu/Kissing-Bug.git
+#2 pip install -r requirements.txt
+#3 python initial.py
+```
+
+***
+
 ## Support:
 
 <p><a href="https://www.buymeacoffee.com/SmartMonkE"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="SmartMonkE" /></a></p>
