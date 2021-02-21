@@ -6,18 +6,19 @@ import prettytable as pt
 
 os.system('cls')
 
+# Generating a pretty table.
 sentence = colored('Make sure, you run this application as administrator.', 'cyan', attrs=['bold'])
 width = 127
 t = pt.PrettyTable()
 t.field_names = [colored('NOTE', 'red', attrs=['bold'])]
 [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
 print(t)
+cprint(f'ENTER THE SOFTWARE ACTIVATION CODE SENT TO : ', 'red', attrs=['bold'])
 
-cprint('ENTER THE SOFTWARE ACTIVATION CODE SENT TO YOU: ', 'red', attrs=['bold'])
-
+# Toast Notification Sent to your desktop.
 toast = ToastNotifier()
 activation_code = random.randint(1000, 15000)
-toast.show_toast('KISSING BUG', 'Your Activation Code is ' + str(activation_code), icon_path='bug.ico')
+toast.show_toast('KISSING BUG', f' Your Activation Code is ' + str(activation_code), icon_path='bug.ico')
 
 user_input = input()
 
