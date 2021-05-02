@@ -3,7 +3,6 @@ from termcolor import cprint, colored
 import prettytable as pt
 
 
-
 # -------------------------------------------------Antivirus Hacker -----------------------------------------------------
 def virus_A():
     cprint("\n===========================================================================================================================================================", 'red')
@@ -12,13 +11,15 @@ def virus_A():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('Viruses/Code_Files/Antivirus_Hacker.txt', 'r', encoding='utf-8')
+        file = open('Viruses/Code_Files/Antivirus_Hacker.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Antivirus Hacker', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -62,7 +63,8 @@ def virus_A():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_A()
 
 
@@ -74,13 +76,15 @@ def virus_B():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Application_Bomber.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Application_Bomber.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('APPLICATION BOMBER', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -99,7 +103,8 @@ def virus_B():
                 try:
                     currentWorkingDirectory = os.getcwd()
                     os.chdir('../Viruses/Code_Files')
-                    os.rename('Application_Bomber.txt', 'Application_Bomber.bat')
+                    os.rename('Application_Bomber.txt',
+                              'Application_Bomber.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
                     cprint(e, 'red', attrs=['bold'])
@@ -123,7 +128,8 @@ def virus_B():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_B()
 
 
@@ -135,13 +141,15 @@ def virus_C():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Delete_key_registry_files.txt', 'r', encoding='utf-8')
+        file = open(
+            '../Viruses/Code_Files/Delete_key_registry_files.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Registry Key Eraser', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -161,7 +169,8 @@ def virus_C():
                 try:
                     currentWorkingDirectory = os.getcwd()
                     os.chdir('../Viruses/Code_Files')
-                    os.rename('Delete_key_registry_files.txt', 'Delete_key_registry_files.bat')
+                    os.rename('Delete_key_registry_files.txt',
+                              'Delete_key_registry_files.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
                     cprint(e, 'red', attrs=['bold'])
@@ -185,7 +194,8 @@ def virus_C():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_C()
 
 
@@ -197,13 +207,15 @@ def virus_D():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Disable_Internet.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Disable_Internet.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Internet Jammer', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -247,7 +259,8 @@ def virus_D():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_D()
 
 
@@ -259,13 +272,15 @@ def virus_E():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Endless_Enter.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Endless_Enter.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Endless KeyDown', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -309,7 +324,8 @@ def virus_E():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_E()
 
 
@@ -321,13 +337,15 @@ def virus_F():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Folder_Flooder.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Folder_Flooder.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Folder Flooder', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -371,7 +389,8 @@ def virus_F():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_F()
 
 
@@ -383,13 +402,15 @@ def virus_G():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Popping_CD_Drive.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Popping_CD_Drive.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('CD Popper', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -433,7 +454,8 @@ def virus_G():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_G()
 
 
@@ -445,13 +467,16 @@ def virus_H():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Unlimited_BG_Process_Creator.txt', 'r', encoding='utf-8')
+        file = open(
+            '../Viruses/Code_Files/Unlimited_BG_Process_Creator.txt', 'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
-        t.field_names = [colored('Background Process Producer', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        t.field_names = [
+            colored('Background Process Producer', 'red', attrs=['bold'])]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -471,7 +496,8 @@ def virus_H():
                 try:
                     currentWorkingDirectory = os.getcwd()
                     os.chdir('../Viruses/Code_Files')
-                    os.rename('Unlimited_BG_Process_Creator.txt', 'Unlimited_BG_Process_Creator.bat')
+                    os.rename('Unlimited_BG_Process_Creator.txt',
+                              'Unlimited_BG_Process_Creator.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
                     cprint(e, 'red', attrs=['bold'])
@@ -495,7 +521,8 @@ def virus_H():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_H()
 
 
@@ -507,13 +534,15 @@ def virus_I():
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/User_Account_Flooder.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/User_Account_Flooder.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('User Flooder', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -533,7 +562,8 @@ def virus_I():
                 try:
                     currentWorkingDirectory = os.getcwd()
                     os.chdir('../Viruses/Code_Files')
-                    os.rename('User_Account_Flooder.txt', 'User_Account_Flooder.bat')
+                    os.rename('User_Account_Flooder.txt',
+                              'User_Account_Flooder.bat')
                     os.chdir(currentWorkingDirectory)
                 except Exception as e:
                     cprint(e, 'red', attrs=['bold'])
@@ -557,7 +587,8 @@ def virus_I():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_I()
 
 
@@ -567,17 +598,20 @@ def virus_J():
     cprint('\nDISCLAIMER: Once you convert the virus to .bat (batch) file, you can\'t edit it again.\n', 'yellow',
            attrs=['bold'])
 
-    cprint('!!! THIS IS THE MOST DANGEROUS VIRUS THIS CAN COST YOUR WHOLE OS !!!', 'red', attrs=['bold'])
+    cprint('!!! THIS IS THE MOST DANGEROUS VIRUS THIS CAN COST YOUR WHOLE OS !!!',
+           'red', attrs=['bold'])
     cprint("===========================================================================================================================================================\n", 'red')
 
     try:
-        file = open('../Viruses/Code_Files/Windows_Hacker.txt', 'r', encoding='utf-8')
+        file = open('../Viruses/Code_Files/Windows_Hacker.txt',
+                    'r', encoding='utf-8')
         virusCode = file.read()
         sentence = colored(virusCode, 'cyan')
         width = 127
         t = pt.PrettyTable()
         t.field_names = [colored('Windows Hacker', 'red', attrs=['bold'])]
-        [t.add_row([sentence[i:i + width]]) for i in range(0, len(sentence), width)]
+        [t.add_row([sentence[i:i + width]])
+         for i in range(0, len(sentence), width)]
         print(t)
         file.close()
     except FileNotFoundError:
@@ -621,5 +655,6 @@ def virus_J():
             elif choice == 4:
                 os.system('python Sars_cov.py')
     except ValueError:
-        cprint('\nError 404! Requested Service not found.', 'red', attrs=['bold'])
+        cprint('\nError 404! Requested Service not found.',
+               'red', attrs=['bold'])
         virus_J()
