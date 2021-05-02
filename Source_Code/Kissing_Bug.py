@@ -19,11 +19,13 @@ cprint("██║░╚██╗██║██████╔╝█████
        attrs=['bold', 'blink'])
 cprint("╚═╝░░╚═╝╚═╝╚═════╝░╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝   ░╚═════╝░░╚═════╝░░╚═════╝░ ", 'blue',
        attrs=['bold', 'blink'])
+
 print('\n\n')
 
 # User of the hacker/cracker
 dev = colored('Smart Monk-E', 'red', attrs=['bold'])
-github = colored('https://github.com/Mayur-Debu/Kissing-Bug', 'red', attrs=['bold'])
+github = colored('https://github.com/Mayur-Debu/Kissing-Bug',
+                 'red', attrs=['bold'])
 current_hacker = getpass.getuser()
 current_hacker = colored(current_hacker, 'green', attrs=['bold'])
 
@@ -52,69 +54,67 @@ try:
 
         choice = int(input('Enter your choice:'))
 
+        # PDF decrypter
         if choice == 1:
             try:
                 os.system('cls')
                 os.system('python pdf_password_remover.py')
-            except OSError:
-                # Exception for the Linux OS.
-                os.system('clear')
-                os.system('python3 pdf_password_remover.py')
+
             except ImportError:
                 importError()
                 break
 
+        #  Detect Malware
         elif choice == 2:
             try:
                 os.system('cls')
                 os.system('python Detect_Malware.py')
-            except OSError:
-                # Exception for the Linux OS.
-                os.system('clear')
-                os.system('python3 Detect_Malware.py')
+
             except ImportError:
                 importError()
                 break
 
+        # Sars_coV virus builder
         elif choice == 3:
             try:
                 os.system('cls')
                 os.system('python Sars_cov.py')
-            except OSError:
-                # Exception for the Linux OS.
-                os.system('clear')
-                os.system('python3 Sars_cov.py')
+
             except ImportError:
                 importError()
                 break
 
+        # windows activator
         elif choice == 4:
             try:
                 os.system('cls')
                 os.system('python Win_Activator.py')
-            except OSError:
-                # Exception for the Linux OS.
-                os.system('clear')
-                os.system('python3 Win_Activator.py')
+
             except ImportError:
                 importError()
+                break
 
+        # saycheese module
         elif choice == 5:
             try:
                 current_working_directory = os.getcwd()
                 os.chdir('saycheese')
                 os.system('bash saycheese.sh')
                 os.chdir(current_working_directory)
+
             except ImportError:
                 importError()
+                break
+
             else:
                 # Printing the Exception if the module is executed on windows Operating System.
                 print()
                 cprint(
-                    '------------------------------------------------------------------------------------------------------------------------------------------------------------',
+                    '----------------------------------------------------------------------------------------------------------------------------------',
                     'blue', attrs=['bold'])
 
-                cprint('I see you are running this on your window\'s OS.\n\n', 'green', attrs=['bold'])
+                cprint('I see you are running this on your window\'s OS.\n\n',
+                       'green', attrs=['bold'])
                 cprint('Follow the instruction to execute the saycheese module on the window\'s.', 'yellow',
                        attrs=['bold'])
 
@@ -134,7 +134,7 @@ try:
                        attrs=['bold'])
 
                 cprint(
-                    '------------------------------------------------------------------------------------------------------------------------------------------------------------',
+                    '----------------------------------------------------------------------------------------------------------------------------------',
                     'blue', attrs=['bold'])
 
                 print()
@@ -147,10 +147,12 @@ try:
                         os.system('python Kissing_Bug.py')
                     else:
                         exit()
-                except OSError:
+
+                except (OSError, TypeError, NameError):
                     os.system('clear')
                     os.system('python3 kissingBug.py')
 
+        # Keylogger
         elif choice == 6:
             try:
                 os.system('cls')
@@ -159,16 +161,15 @@ try:
                 os.chdir('Keylogger_Source_Code')
                 os.system('python Keylogger.py')
                 os.chdir(current_working_directory)
-            except OSError:
-                # Exception for the Linux OS.
-                os.system('clear')
-                os.system('python3 ')
+
             except ImportError:
                 importError()
 
+        # final exiting option
         elif choice == 7:
             exit()
 
-except ValueError:
+except (ValueError, TypeError):
     cprint('\nError 404! Requested service not found', 'red', attrs=['bold'])
+    os.system('cls')
     os.system('python Kissing_Bug.py')
