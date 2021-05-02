@@ -4,7 +4,10 @@ import loading
 import prettytable as pt
 from termcolor import colored, cprint
 
+
 os.system('cls')
+
+
 cprint(
     "\n===========================================================================================================================================================",
     'red')
@@ -27,8 +30,10 @@ cprint(
     "===========================================================================================================================================================",
     'red')
 
+
 try:
     os.system('start info.mp3')
+
 except FileNotFoundError:
     mytext = 'Hi, I apologize for the inconvenience, I request you to follow the below given steps to activate your windows. Cherrs !!! '
     language = 'en'
@@ -36,8 +41,10 @@ except FileNotFoundError:
     myobj.save("info.mp3")
     os.system("start info.mp3")
 
+
 # Remaining Driver Code
 loading.scripLoading()
+
 print()
 sentence = colored('Step 1: Copy the script from this link==> https://github.com/Mayur-Debu/Win_Activator .\n '
                    'Step 2: Paste in notepad. \n'
