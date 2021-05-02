@@ -13,25 +13,16 @@ cprint('Welcome to PIKE PDF. This software will help you remove the encryption f
 
 try:
     cprint('\nPath to the .pdf file: ', 'cyan', attrs=['bold'])
-    encryptedFilePath = input()
-    encryptedFilePath = encryptedFilePath.replace('\\', '\\\\')  # Convert the user input path to absolute path
 
+    encryptedFilePath = input()
+    # Convert the user input path to absolute path
+    encryptedFilePath = encryptedFilePath.replace('\\', '\\\\')
     cprint('\nPassword to turn off the encryption: ')
     encryptedFilePassword = input()
+    # Turning off the encryption
+    pdfFile = pikepdf.open(encryptedFilePath, encryptedFilePassword)
 
-    pdfFile = pikepdf.open(encryptedFilePath, encryptedFilePassword)  # Turning off the encryption
-
-except FileNotFoundError:
-    cprint('Error 404: FILE NOT FOUND.', 'red', attrs=['bold'])
-    choice = input('Do you want to retry? (y/n): ')
-    if choice == 'y' or choice == 'Y':
-        os.system('cls')
-        os.system('python pdf_password_remover.py')
-    else:
-        os.system('cls')
-        os.system('python Kissing_Bug.py')
-
-except ValueError:
+except (FileNotFoundError, ValueError):
     cprint('Error 404: FILE NOT FOUND.', 'red', attrs=['bold'])
     choice = input('Do you want to retry? (y/n): ')
     if choice == 'y' or choice == 'Y':
@@ -45,34 +36,17 @@ except ValueError:
 animateDecrypting()
 
 try:
-    cprint('\nPath to the save the decrypted .pdf file: ', 'cyan', attrs=['bold'])
+    cprint('\nPath to the save the decrypted .pdf file: ',
+           'cyan', attrs=['bold'])
+
     decryptedFilePath = input()
-    decryptedFilePath = decryptedFilePath.replace('\\', '\\\\')  # Convert the user input path to absolute path
+    # Convert the user input path to absolute path
+    decryptedFilePath = decryptedFilePath.replace('\\', '\\\\')
+    # Saving the decrypted .pdf file
+    pdfFile.save(decryptedFilePath)
 
-    pdfFile.save(decryptedFilePath)  # Saving the decrypted .pdf
-
-except FileExistsError:
+except (FileExistsError, NotADirectoryError, FileNotFoundError):
     cprint('File Already Exists.', 'red', attrs=['bold'])
-    choice = input('Do you want to retry? (y/n): ')
-    if choice == 'y' or choice == 'Y':
-        os.system('cls')
-        os.system('python pdf_password_remover.py')
-    else:
-        os.system('cls')
-        os.system('python Kissing_Bug.py')
-
-except NotADirectoryError:
-    cprint('No Such Directory Exists.', 'red', attrs=['bold'])
-    choice = input('Do you want to retry? (y/n): ')
-    if choice == 'y' or choice == 'Y':
-        os.system('cls')
-        os.system('python pdf_password_remover.py')
-    else:
-        os.system('cls')
-        os.system('python Kissing_Bug.py')
-
-except FileNotFoundError:
-    cprint('File Not Found OR File Name Not Specified', 'red', attrs=['bold'])
     choice = input('Do you want to retry? (y/n): ')
     if choice == 'y' or choice == 'Y':
         os.system('cls')
