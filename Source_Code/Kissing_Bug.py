@@ -4,7 +4,7 @@ from termcolor import colored, cprint
 
 os.system('cls')
 
-# Header Text kissing Bug.
+# welcome screen of the tool
 print('\n\n')
 
 cprint("██╗░░██╗██╗░██████╗░██████╗██╗███╗░░██╗░██████╗   ░██████╗░██╗░░░██╗░██████╗░ ", 'blue',
@@ -21,7 +21,7 @@ cprint("╚═╝░░╚═╝╚═╝╚═════╝░╚════
        attrs=['bold', 'blink'])
 print('\n\n')
 
-# User Info
+# User of the hacker/cracker
 dev = colored('Smart Monk-E', 'red', attrs=['bold'])
 github = colored('https://github.com/Mayur-Debu/Kissing-Bug', 'red', attrs=['bold'])
 current_hacker = getpass.getuser()

@@ -1,3 +1,15 @@
+'''
+@author: SmartMonk-E(Mayur-Debu), thelinuxchoice(anonymous)
+
+Product Details: A hacking tool made for the personal educational purpose.
+
+Disclaimer: Please note that, the usage of this software is for educational and ethical purpose only. 
+            Any harm caused to your system or the target system will be the responsibility of the user itself. 
+            Owner of this repository is not responsible for any harm caused to your or any other system.
+
+Contact me at this url: www.mayurmanoharpatil.ml
+'''
+
 # from win10toast import ToastNotifier
 import random
 from termcolor import cprint, colored
